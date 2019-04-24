@@ -271,28 +271,29 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-6">
-                            <form name="contactform" method="post" action="send_form_email.php" class="wpcf7-form">
+                            <form name="contactform" method="post" class="wpcf7-form">
                                 <div class="row">
                                     <div class="col-md-12">                                        
-                                        <p><input  type="text" name="first_name" placeholder="Name" maxlength="50" size="30"></p>
+                                        <p><input  type="text" name="first_name" id="first_name" placeholder="Name" maxlength="50" size="30"></p>
                                     </div>                                    
                                     <div class="col-md-12">                                        
-                                        <p><input  type="text" name="email" placeholder="Email" maxlength="80" size="30"></p>
+                                        <p><input  type="text" name="email" id="email" placeholder="Email" maxlength="80" size="30"></p>
                                     </div>
                                     <div class="col-md-12">                                        
-                                        <p><input  type="text" name="telephone" placeholder="Telephone" maxlength="30" size="30"></p>
+                                        <p><input  type="text" name="telephone" id="telephone" placeholder="Telephone" maxlength="30" size="30"></p>
                                     </div>
                                     <div class="col-md-12">                                        
-                                        <p><input  type="text" name="subject" placeholder="Subject" maxlength="50" size="30"></p>   
+                                        <p><input  type="text" name="subject" id="subject" placeholder="Subject" maxlength="50" size="30"></p>   
                                     </div>
                                     <div class="col-md-12">                                        
-                                        <p><textarea  name="comments" maxlength="1000" placeholder="Message" cols="25" rows="6"></textarea></p>
+                                        <p><textarea  name="comments" id="comments" maxlength="1000" placeholder="Message" cols="25" rows="6"></textarea></p>
                                     </div>
                                     <div class="clearfix"></div>
                                     <div class="col-md-12 text-left">
-                                        <input type="submit" value="SEND" class="btn btn-primary width">
+                                        <input type="submit" name="confirm" value="SEND" id="confirm" class="btn btn-primary width">
                                         <!-- <button type="submit" class="btn btn-primary btn-big">Send Email</button> -->
                                     </div>
+                                    <div id="messageShow"></div>
                                 </div>
                             </form>
                         </div>
@@ -457,6 +458,7 @@
     <script src="js/jquery.fitvids.js"></script>    
     <script src="js/wow.min.js"></script>
     <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/form-validate.js"></script>
 
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAvpnlHRidMIU374bKM5-sx8ruc01OvDjI"></script>
     <script type="text/javascript" src="js/contact.js"></script>
